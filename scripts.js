@@ -5,16 +5,19 @@ document.addEventListener("DOMContentLoaded", function () {
     const titleElement = document.getElementById("typing-title");
     let index = 0;
 
+    titleElement.innerHTML = ""; // Clears fallback text
+
     function type() {
         if (index < title.length) {
             titleElement.innerHTML += title.charAt(index);
             index++;
-            setTimeout(type, 100); // Adjust speed of typing
+            setTimeout(type, 100);
         } else {
-            titleElement.classList.remove("typing"); // Remove cursor after typing
+            titleElement.classList.remove("typing"); // Remove cursor effect after typing
         }
     }
 
     titleElement.classList.add("typing");
     type();
 });
+
