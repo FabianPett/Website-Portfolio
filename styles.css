@@ -40,6 +40,7 @@ nav ul li a[href*="github"]:hover {
 }
 
 /* Twitter Hover Effect */
+nav ul li a[href*="x.com"]:hover,
 nav ul li a[href*="twitter"]:hover {
     color: #b4b4b4; /* Light Gray for Twitter */
 }
