@@ -150,3 +150,16 @@ footer {
         font-size: 1em;
     }
 }
+.typing {
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid white; /* Simulates a blinking cursor */
+    animation: blinkCursor 0.75s step-end infinite;
+}
+
+@keyframes blinkCursor {
+    50% {
+        border-color: transparent;
+    }
+}
