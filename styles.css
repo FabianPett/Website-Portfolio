@@ -39,6 +39,11 @@ nav ul li a[href*="github"]:hover {
     color: #b4b4b4; /* Light Gray for GitHub */
 }
 
+/* Twitter Hover Effect */
+nav ul li a[href*="twitter"]:hover {
+    color: #b4b4b4; /* Light Gray for Twitter */
+}
+
 /* Page Background */
 body {
     background-color: #1E1E1E;
