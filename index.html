@@ -1,43 +1,80 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fabian's Coding Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+<body>
+
+<!-- Header with Typing Effect -->
 <header>
-<h1 id="typing-title">Welcome to my coding portfolio!</h1>
+    <h1 id="typing-title">Welcome to my coding portfolio!</h1>
 
     <nav>
         <ul>
             <li>
                 <a href="https://github.com/FabianPett" target="_blank">
-                    <i class="fab fa-github"></i> GitHub
+                <i class="fa fa-github"></i> GitHub
                 </a>
             </li>
             <li>
                 <a href="https://www.linkedin.com/in/fabian-pettersson-7a8a00344/" target="_blank">
-                    <i class="fab fa-linkedin"></i> LinkedIn
+                    <i class="fa fa-linkedin"></i> LinkedIn
                 </a>
             </li>
             <li>
                 <a href="https://x.com/FabPettersson" target="_blank">
-                    <i class="fab fa-x-twitter"></i> Twitter
+                    <i class="fa fa-twitter"></i> Twitter
                 </a>
             </li>
         </ul>
     </nav>
 </header>
-<body>
-<section id="projects">
-    <h2>My Python Projects</h2>
-    <div class="project">
-        <h3>Project 1: Number Guessing Game</h3>
-        <p>My first project, a simple number guessing game that gives you hints throughout and tells you how many guesses you did in the round. <a href="https://github.com/FabianPett/number-guessing-game" target="_blank">View on GitHub</a></p>
+
+<!-- Navbar -->
+<div class="topnav" id="myTopnav">
+    <a href="#typing-title" class="active" id="homeLink">Home</a>
+    <a href="#projects">Projects</a>
+    <a href="#about">About Me</a>
+    <a href="#contact">Contact</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+    </a>
+</div>
+
+<!-- Main Content -->
+<div class="row">
+    <div class="column">
+        <section id="projects">
+            <h2>My Python Projects</h2>
+            <div class="project">
+                <h3>Project 1: Number Guessing Game</h3>
+                <p>My first project, a simple number guessing game that gives you hints throughout and tells you how many guesses you did in the round. 
+                    <a href="https://github.com/FabianPett/number-guessing-game" target="_blank">View on GitHub</a>
+                </p>
+            </div>
+        </section>        
     </div>
-</section>
-</body>
+    <div class="column">
+        <h2>Column 1</h2>
+        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+    <div class="column">
+        <h2>Column 2</h2>
+        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+</div>
+
+<!-- Footer -->
 <footer>
-    <p>&copy; <span id="year"></span> Fabian's Coding Portfolio All rights reserved.</p>
+    <p>&copy; <span id="year"></span> Fabian's Coding Portfolio. All rights reserved.</p>
 </footer>
+
 <script src="scripts.js"></script>
+</body>
 </html>

@@ -21,3 +21,13 @@ document.addEventListener("DOMContentLoaded", function () {
     type();
 });
 
+function topFunction() {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"  // This enables smooth scrolling
+    });
+}
+document.getElementById("homeLink").addEventListener("click", function(event) {
+    event.preventDefault(); 
+    topFunction(); 
+});
