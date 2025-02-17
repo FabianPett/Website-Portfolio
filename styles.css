@@ -21,7 +21,7 @@ header {
     font-size: 25px;
     text-align: center;
     font-family: 'Source Code Pro', monospace;
-    height: 100vh; /* Full viewport height */
+    min-height: 100vh; /* Full viewport height */
     width: 100%;  /* Full viewport width */
     display: flex;
     flex-direction: column;
@@ -134,7 +134,7 @@ svg {
     padding: 25px 0px;
     background-color: #1E1E1E;
     color: white;
-    height: 100vh;  /* Full viewport height */
+    min-height: 100vh;  /* Full viewport height */
     width: 100%;   /* Full viewport width */
     display: flex;
     flex-direction: column;
@@ -146,7 +146,7 @@ svg {
     padding: 25px 0px;
     background-color: #1E1E1E;
     color: white;
-    height: 100vh;  /* Full viewport height */
+    min-height: 100vh;  /* Full viewport height */
     width: 100%;   /* Full viewport width */
     display: flex;
     flex-direction: column;
