@@ -1,6 +1,11 @@
 /* Global Styling */
 html {
-    scroll-behavior: smooth;  /* Enables smooth scrolling */
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-padding-top: 50px;
 }
 
 /* Body and Page Background */
@@ -13,11 +18,11 @@ body {
 header {
     background-color: #222; /* Dark background */
     padding: 10px 0;
-    font-size: 32px;
+    font-size: 25px;
     text-align: center;
     font-family: 'Source Code Pro', monospace;
     height: 100vh; /* Full viewport height */
-    width: 100vw;  /* Full viewport width */
+    width: 100%;  /* Full viewport width */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -44,21 +49,27 @@ nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
-    display: flex;  /* Flexbox layout for social links */
+    display: flex;  /* Flexbox layout for social links *
+    align-items: center;
     justify-content: center;  /* Center the links */
     gap: 20px;  /* Space between links */
 }
 
 nav ul li {
-    display: inline-block;
+    display: flex;
+    align-items: center;
 }
+
 
 /* Social Media Links */
 nav ul li a {
     color: white;
-    font-size: 28px;
+    font-size: 24px;
     transition: color 0.3s ease-in-out;
     text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
 }
 
 /* LinkedIn Hover Effect */
@@ -76,6 +87,14 @@ nav ul li a[href*="x.com"]:hover,
 nav ul li a[href*="twitter"]:hover {
     color: #b4b4b4; /* Light Gray for Twitter */
 }
+
+/* SVG */
+svg {
+    width: 24px;
+    height: 24px;
+    fill: white;
+}
+
 
 /* Navbar Styling */
 .topnav {
@@ -110,25 +129,36 @@ nav ul li a[href*="twitter"]:hover {
     color: white;
 }
 
-/* Projects Section */
-#projects {
+.column {
     text-align: center;
-    padding: 50px 20px;
+    padding: 25px 0px;
     background-color: #1E1E1E;
     color: white;
     height: 100vh;  /* Full viewport height */
-    width: 100vw;   /* Full viewport width */
+    width: 100%;   /* Full viewport width */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Projects Section */
+#projects {
+    text-align: center;
+    padding: 25px 0px;
+    background-color: #1E1E1E;
+    color: white;
+    height: 100vh;  /* Full viewport height */
+    width: 100%;   /* Full viewport width */
     display: flex;
     flex-direction: column;
 }
 
 /* Project Titles */
-#projects h2 {
+h2 {
     font-size: 2.5em;
-    margin-bottom: 20px;
     font-family: 'Source Code Pro', monospace;
+    width: 100%;
 }
-
+	
 /* Individual Projects */
 .project {
     margin: 20px 0;
@@ -176,7 +206,7 @@ footer {
 /* Mobile Responsiveness */
 @media screen and (max-width: 768px) {
     #projects {
-        padding: 30px 15px;
+        padding: 30px 0px;
     }
     
     .project {

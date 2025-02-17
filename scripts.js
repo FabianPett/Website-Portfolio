@@ -1,7 +1,7 @@
 /* Place your JavaScript in this file */
 document.getElementById("year").textContent = new Date().getFullYear();
 document.addEventListener("DOMContentLoaded", function () {
-    const title = "Welcome to my coding portfolio!";
+    const title = "Building My Skills, One Project at a Time.";
     const titleElement = document.getElementById("typing-title");
     let index = 0;
 
