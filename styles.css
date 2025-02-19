@@ -1,4 +1,5 @@
-/* Global Styling */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Rajdhani:wght@300;600&display=swap');
+
 html {
     scroll-behavior: smooth;
     overflow-x: hidden;
@@ -8,217 +9,206 @@ html {
     scroll-padding-top: 50px;
 }
 
-/* Body and Page Background */
 body {
-    background-color: #1E1E1E;
-    font-family: 'Source Code Pro', monospace;
+    background-color: #000;
+    font-family: 'Rajdhani', sans-serif;
+    color: #D4D4D4;
 }
 
-/* Header Styling */
 header {
-    background-color: #222; /* Dark background */
-    padding: 10px 0;
-    font-size: 25px;
+    background-color: #000;
+    padding: 20px 0;
     text-align: center;
-    font-family: 'Source Code Pro', monospace;
-    min-height: 100vh; /* Full viewport height */
-    width: 100%;  /* Full viewport width */
+    font-family: 'Orbitron', sans-serif;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: white;
+    color: #F5C518;
+    text-shadow: 0px 0px 15px #F5C518;
+}
+
+h1 {
+    font-size: 55px;
+    font-family: 'Orbitron', sans-serif;
 }
 
 .typing {
     display: inline-block;
     white-space: nowrap;
     overflow: hidden;
-    border-right: 2px solid white; /* Simulates a blinking cursor */
+    border-right: 3px solid #00FFFF;
     animation: blinkCursor 0.75s step-end infinite;
 }
 
 @keyframes blinkCursor {
-    50% {
-        border-color: transparent;
-    }
+    50% { border-color: transparent; }
 }
 
-/* Social Media Navigation */
 nav ul {
     list-style: none;
     padding: 0;
-    margin: 0;
-    display: flex;  /* Flexbox layout for social links *
-    align-items: center;
-    justify-content: center;  /* Center the links */
-    gap: 20px;  /* Space between links */
-}
-
-nav ul li {
-    display: flex;
-    align-items: center;
-}
-
-
-/* Social Media Links */
-nav ul li a {
-    color: white;
-    font-size: 24px;
-    transition: color 0.3s ease-in-out;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-}
-
-/* LinkedIn Hover Effect */
-nav ul li a[href*="linkedin"]:hover {
-    color: #0077b5; /* LinkedIn Blue */
-}
-
-/* GitHub Hover Effect */
-nav ul li a[href*="github"]:hover {
-    color: #b4b4b4; /* Light Gray for GitHub */
-}
-
-/* Twitter Hover Effect */
-nav ul li a[href*="x.com"]:hover,
-nav ul li a[href*="twitter"]:hover {
-    color: #b4b4b4; /* Light Gray for Twitter */
-}
-
-/* SVG */
-svg {
-    width: 24px;
-    height: 24px;
-    fill: white;
-}
-
-
-/* Navbar Styling */
-.topnav {
-    position: -webkit-sticky; /* Safari */
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    background-color: #333; 
+    margin: 20px 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 20px;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    color: #D4D4D4;
+    font-size: 24px;
+    transition: all 0.3s ease-in-out;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    background: #111;
+    box-shadow: 0px 0px 10px rgba(0, 255, 255, 0.2);
+}
+
+nav ul li a:hover {
+    background: #2188F2;
+    color: #FFF;
+    text-shadow: 0px 0px 5px white;
+}
+
+nav ul li a svg {
+    width: 24px;
+    height: 24px;
+    fill: currentColor;
+    transition: fill 0.3s ease-in-out;
+}
+
+nav ul li a:hover svg {
+    fill: white;
+}
+
+.topnav {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: #111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 255, 255, 0.3);
 }
 
 .topnav a {
-    color: #f2f2f2;
-    padding: 14px 16px;
+    color: #D4D4D4;
+    padding: 14px 20px;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 18px;
+    font-family: 'Orbitron', sans-serif; 
+    text-transform: uppercase;
     display: block;
     text-align: center;
+    transition: all 0.3s ease-in-out;
 }
 
-/* Change the color of links on hover */
 .topnav a:hover {
-    color: grey;
+    color: #00FFFF; 
+    text-shadow: 0px 0px 5px #00FFFF;
 }
 
-/* Add an active class to highlight the current page */
 .topnav a.active {
-    background-color: #04AA6D;
+    background: linear-gradient(45deg, #D90429, #2188F2);
     color: white;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px #D90429;
 }
 
 .column {
     text-align: center;
-    padding: 25px 0px;
-    background-color: #1E1E1E;
-    color: white;
-    min-height: 100vh;  /* Full viewport height */
-    width: 100%;   /* Full viewport width */
-    display: flex;
-    flex-direction: column;
+    padding: 40px;
+    background-color: #1B1B1B;
+    border: 2px solid #2188F2;
+    box-shadow: 0px 0px 15px rgba(33, 136, 242, 0.3);
+    margin: 20px;
+    border-radius: 10px;
 }
 
-/* Projects Section */
-#projects {
-    text-align: center;
-    padding: 25px 0px;
-    background-color: #1E1E1E;
-    color: white;
-    min-height: 100vh;  /* Full viewport height */
-    width: 100%;   /* Full viewport width */
-    display: flex;
-    flex-direction: column;
+#about {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #111;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.3);
+    text-align: left;
 }
 
-/* Project Titles */
-h2 {
+h2, h3 {
+    color: #F5C518;
     font-size: 2.5em;
-    font-family: 'Source Code Pro', monospace;
-    width: 100%;
-}
-	
-/* Individual Projects */
-.project {
-    margin: 20px 0;
-    padding: 20px;
-    background-color: #333;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    font-family: 'Orbitron', sans-serif;
+    text-shadow: 0px 0px 15px #F5C518;
 }
 
-.project h3 {
-    font-size: 1.8em;
-    margin-bottom: 10px;
-    font-family: 'Source Code Pro', monospace;
+h4 {
+    color: #F5C518;
+    font-size: 1.2em;
+    font-family: 'Orbitron', sans-serif;
+    text-shadow: 0px 0px 15px #F5C518;
 }
 
-/* Links within Projects */
-.project a {
-    color: #b4b4b4; /* Grey for GitHub links */
-    font-size: 1em;
+a {
+    color: #00FFFF;
     text-decoration: none;
-    transition: color 0.3s ease-in-out;
+    font-weight: bold;
+    transition: 0.3s;
 }
 
-.project a:hover {
-    color: #f5f5f5; /* Light Gray for hover effect */
+a:hover {
+    text-shadow: 0px 0px 5px #00FFFF;
 }
 
-/* Project Descriptions */
-.project p {
-    font-size: 1.1em;
-    font-family: 'Source Code Pro', monospace;
+.container {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #343434;
+    padding: 10px 0;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 255, 255, 0.2);
 }
 
-/* Footer */
+.skills {
+    text-align: right;
+    padding: 10px;
+    color: white;
+    font-family: 'Orbitron', sans-serif;
+    height: 30px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.html { width: 10%; background-color: #D90429; }
+.css { width: 5%; background-color: #2188F2; }
+.js { width: 5%; background-color: #F5C518; }
+.python { width: 20%; background-color: #9E9E9E; }
+
 footer {
     text-align: center;
-    font-family: 'Source Code Pro', monospace;
+    font-family: 'Rajdhani', sans-serif;
     padding: 10px;
-    background-color: #222;
-    color: white;
-    bottom: 0;
-    width: 100%;
+    background-color: #000;
+    color: #D4D4D4;
+    box-shadow: 0px 0px 10px rgba(0, 255, 255, 0.2);
 }
 
-/* Mobile Responsiveness */
 @media screen and (max-width: 768px) {
-    #projects {
-        padding: 30px 0px;
-    }
-    
-    .project {
-        margin: 15px 0;
-        padding: 15px;
-    }
-
-    .project h3 {
-        font-size: 1.5em;
-    }
-    
-    .project p {
-        font-size: 1em;
-    }
+    #projects { padding: 30px 0px; }
+    .project { margin: 15px 0; padding: 15px; }
+    .project h3 { font-size: 1.5em; }
+    .project p { font-size: 1em; }
 }
