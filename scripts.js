@@ -45,10 +45,10 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     document.getElementById("homeLink").addEventListener("click", function(event) {
-        event.preventDefault(); // Prevent default anchor behavior
+        event.preventDefault();
         window.scrollTo({
-            top: 0, // Scroll to the top of the page
-            behavior: 'smooth' // Smooth scroll
+            top: 0, 
+            behavior: 'smooth'
         });
     });
 

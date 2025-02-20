@@ -15,9 +15,19 @@ body {
     color: #D4D4D4;
 }
 
+#SWBackground {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+
 header {
-    background-color: #000;
-    padding: 20px 0;
+    padding: 0px 0;
     text-align: center;
     font-family: 'Orbitron', sans-serif;
     min-height: 100vh;
@@ -138,18 +148,19 @@ nav ul li a:hover svg {
 }
 
 #about {
-    max-width: 900px;
-    margin: 0 auto;
-    background-color: #111;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.3);
     text-align: left;
 }
 
-h2, h3 {
+h2 {
     color: #F5C518;
     font-size: 2.5em;
+    font-family: 'Orbitron', sans-serif;
+    text-shadow: 0px 0px 15px #F5C518;
+}
+
+h3 {
+    color: #F5C518;
+    font-size: 1.50em;
     font-family: 'Orbitron', sans-serif;
     text-shadow: 0px 0px 15px #F5C518;
 }
@@ -182,20 +193,9 @@ a:hover {
     box-shadow: 0px 0px 10px rgba(0, 255, 255, 0.2);
 }
 
-.skills {
-    text-align: right;
-    padding: 10px;
-    color: white;
-    font-family: 'Orbitron', sans-serif;
-    height: 30px;
-    border-radius: 5px;
-    margin-bottom: 10px;
+#contact {
+    text-align: left;
 }
-
-.html { width: 10%; background-color: #D90429; }
-.css { width: 5%; background-color: #2188F2; }
-.js { width: 5%; background-color: #F5C518; }
-.python { width: 20%; background-color: #9E9E9E; }
 
 footer {
     text-align: center;
